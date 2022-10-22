@@ -1,21 +1,21 @@
 format = """
-[](#4C566A)\
+[](#44475a)\
 $directory\
-[](fg:#4C566A bg:#81A1C1)\
+[](fg:#44475a bg:#6272a4)\
 $git_branch\
 $git_status\
-[](fg:#81A1C1 bg:#8FBCBB)\
+[](fg:#6272a4 bg:#BD93F9)\
 $golang\
 $java\
 $julia\
 $nodejs\
 $rust\
-[ ](fg:#8FBCBB)\
+[ ](fg:#BD93F9)\
 """
 right_format = """
-[](fg:#4C566A)
+[](fg:#44475a)
 $time
-[](fg:#4C566A)
+[](fg:#44475a)
 """
 
 # Disable the blank line at the start of the prompt
@@ -29,7 +29,7 @@ style_root = "bg:#9A348E"
 format = '[$user ]($style)'
 
 [directory]
-style = "bg:#4C566A"
+style = "bg:#44475a"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = " "
@@ -49,11 +49,11 @@ truncation_symbol = " "
 
 [git_branch]
 symbol = ""
-style = "bg:#81A1C1"
+style = "bg:#6272a4"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#81A1C1"
+style = "bg:#6272a4"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
@@ -73,7 +73,7 @@ format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#8FBCBB"
+style = "bg:#BD93F9"
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
@@ -84,5 +84,5 @@ format = '[ $symbol ($version) ]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#4C566A"
+style = "bg:#44475a"
 format = '[  $time ]($style)'
